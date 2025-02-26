@@ -9,11 +9,12 @@ import org.springframework.stereotype.Service;
 import com.educandoweb.curso.course.entities.User;
 import com.educandoweb.curso.course.repositories.UserRepository;
 
+//camada responsável por acessar o banco de dados
 
 @Service
 public class UserService {
 
-	@Autowired
+	@Autowired  //para fazer a injeção de dependencia
 	private UserRepository repository;
 	
 	
